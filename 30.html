@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Guess the Number!</title>
+    <style>
+      body {
+        background-color: rgb(231, 245, 100);
+      }
+      h2 {
+        font-size: 50px;
+        text-align: center;
+        text-decoration: solid;
+        color: rgb(67, 212, 35);
+        background-color: blueviolet;
+        font-weight: bolder;
+        text-shadow: 1px 1px red;
+      }
+      div {
+        text-align: center;
+        font-size: 40px;
+        color: rgb(18, 207, 53);
+        font-weight: bolder;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      button {
+        margin-top: 10px;
+        font-size: 20px;
+        color: rgb(34, 53, 178);
+        border-color: blue;
+        border-radius: 20%;
+        font-weight: bolder;
+        font-style: italic;
+      }
+    </style>
+    <script type="text/javascript">
+      var number = generateNumber();
+
+      function generateNumber() {
+        return Math.floor(1000 * Math.random()) + 1;
+      }
+
+      function guessNumber() {
+        if (
+          document.getElementById("number1").value == undefined ||
+          document.getElementById("number1").value.trim() == "" ||
+          isNaN(document.getElementById("number1").value)
+        ) {
+          alert("Please type a number");
+          document.getElementById("number1").focus();
+          return false;
+        }
+        if (parseInt(document.getElementById("number1").value) > number) {
+          alert("Too high\nTry again.");
+        } else if (
+          parseInt(document.getElementById("number1").value) < number
+        ) {
+          alert("Too low\nTry again.");
+        } else {
+          alert("Congratulations!!\nYou guessed the number.");
+          number = generateNumber();
+        }
+        document.getElementById("number1").value = "";
+        document.getElementById("number1").focus();
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Guess the number between 1 and 1000!!</h2>
+    <hr />
+    <div>
+      <label for="number1" accesskey="n">Type a number: </label>
+      <input type="number" id="number1" value="" size="10" /><br />
+      <button onclick="guessNumber()">This is my guess!</button>
+    </div>
+  </body>
+</html>

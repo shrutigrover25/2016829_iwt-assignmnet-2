@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>Documents</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .card {
+        width: 40%;
+        border: red 20px 30px;
+        border-style: dotted;
+        background-color: yellow;
+        box-shadow: blue 10px 10px;
+        position: relative;
+      }
+      .card > img {
+        width: 100%;
+        height: 50%;
+        box-shadow: 20px;
+      }
+      .desc {
+        padding: 20px;
+      }
+      .date {
+        width: 30%;
+        color: green;
+        font-size: 30px;
+        background-color: lightblue;
+        position: absolute;
+        top: 37%;
+        left: 10%;
+        transform: rotate(-10deg);
+      }
+    </style>
+  </head>
+
+  <body>
+    <script>
+      card =
+        '<div class="card">' +
+        '<img src="https://www.emcure.com/wp-content/uploads/2021/08/Namita.jpg" />' +
+        '<div class="Date">10 March</div>' +
+        '<div class="desc">' +
+        "<h2>Card Layout</h2>" +
+        "<p>Ms. Namita Thapar joined Emcure as CFO, post her 6-year stint at Guidant Corporation, USA, subsequently her responsibilities grew to managing Emcure’s largest business unit, the India Business." +
+        " </p></div></div>";
+      for (i = 0; i < 3; i++) {
+        document.write(card);
+      }
+    </script>
+  </body>
+</html>

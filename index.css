@@ -1,0 +1,104 @@
+#oneheader {
+  background-color: black;
+  color:white
+  height: 40px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#oneheader a {
+  float: right;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color:white;
+  font-style: italic;
+  font-weight: 800;
+  font-size: larger;
+}
+
+
+#twoabout h1{
+  background-color: bisque;
+  border-style: solid;
+  border-color: black;
+  text-align: center;
+  text-shadow: 1px 1px red;
+  border-radius: 50%;
+}
+
+#twoabout h1:hover{
+  text-shadow:1px 1px blue;
+}
+
+#intro{
+  justify-content: center;
+  padding: 12px;
+  background-color: aqua;
+  border-style:solid;
+  border-color: blue;
+  border-collapse: separate;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: bolder;
+  border-radius: 10px;
+}
+
+#intro:hover{
+  background-color: bisque;
+  border-color: black;
+}
+
+#cntent{
+  color:blue;
+  text-align: center;
+  font-size: medium;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.ques{
+  color:black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.week{
+  background-color: rgb(90, 39, 243);
+  color:rgb(250, 248, 248);
+  border-style: double;
+  border-color: rgb(252, 156, 12);
+  width:auto;
+  text-align: center;
+  height: 40px;
+  font-size: x-large;
+  font-style:italic;
+  font-weight: bolder;
+  justify-content: center;
+}
+
+.week:hover{
+  background-color: lightgreen;
+  text-decoration: double;
+  color:darkmagenta
+}
+.ques td{
+  padding-right: 30px;
+}
+
+.ques button{
+  font-size: larger;
+  color:black;
+  border-color: blue;
+  background-color: lightsalmon;
+}
+
+.fo{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  color:white
+}
